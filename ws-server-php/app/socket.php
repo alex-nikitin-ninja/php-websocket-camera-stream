@@ -39,7 +39,7 @@ class Socket implements MessageComponentInterface {
 
 			$d = ["f" => base64_encode($f)];
 			$d = json_encode($d);
-			$sr = $client->send($d);
+			$client->send($d);
 			printf(sprintf('%.3f', microtime(true)) . ': ' . strlen($f) . ' -> ' . strlen($d) . ' | ' . $msg . "\n");
 			// print_r($sr);
 		}
