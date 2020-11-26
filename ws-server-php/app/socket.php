@@ -35,10 +35,7 @@ class Socket implements MessageComponentInterface {
             ];
             $d = json_encode($d);
 
-
             $client->send($d);
-            // $client->send("OK");
-            // printf( sprintf('%.3f', microtime(true)) . ': ' . $msg . "\n");
             printf( sprintf('%.3f', microtime(true)) . ': ' . strlen($f) . ' -> ' . strlen($d) . ' | ' . $msg . "\n");
         }
     }
