@@ -3,6 +3,7 @@
 # capture vebcamera into file "img.jpg"
 # ffmpeg -i /dev/video0 -q:v 0.5 -updatefirst 1 ws-server-php/tmp/img.jpg
 
+
 cd ws-server-php/
 rm -r tmp/
 mkdir -p tmp/
