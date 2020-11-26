@@ -29,12 +29,16 @@ class Socket implements MessageComponentInterface {
             // $client->send( "Client $from->resourceId said $msg" );
 
             $path = __CWD . '/tmp/img.jpg';
+
             $f = file_get_contents($path);
+            while (strlen($f) === 0) {
+                $f = file_get_contents($path);
+            }
+            
             $d = [
                 "f" => base64_encode($f)
             ];
             $d = json_encode($d);
-
             $client->send($d);
             printf( sprintf('%.3f', microtime(true)) . ': ' . strlen($f) . ' -> ' . strlen($d) . ' | ' . $msg . "\n");
         }
