@@ -7,9 +7,9 @@ cd ws-server-php/
 rm -r tmp/
 mkdir -p tmp/
 chmod 777 tmp/
-rm -r composer-stable.phar
-wget https://getcomposer.org/composer-stable.phar
-php composer-stable.phar update
+# rm -r composer-stable.phar
+# wget https://getcomposer.org/composer-stable.phar
+# php composer-stable.phar update
 php server.php
 
 
