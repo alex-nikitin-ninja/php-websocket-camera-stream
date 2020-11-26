@@ -1,0 +1,5 @@
+ws-server-php/composer-stable.phar
+ws-server-php/vendor/
+ws-server-php/vendor/*
+ws-server-php/tmp/
+ws-server-php/tmp/*
